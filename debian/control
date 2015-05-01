@@ -1,0 +1,28 @@
+Source: ruby-rpam-ruby19
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Richard B Winters <rik@mmogp.com>
+Build-Depends: debhelper (>= 9),
+ gem2deb,
+ libpam0g-dev,
+ ruby-dev 
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-rpam-ruby19.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-rpam-ruby19.git;a=summary
+Homepage: https://github.com/canweriotnow/rpam-ruby19
+Testsuite: autopkgtest
+XS-Ruby-Versions: all
+
+Package: ruby-rpam-ruby19
+Architecture: any
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends},
+ ${misc:Depends},
+ libpam0g-dev,
+ ruby | ruby-interpreter,
+ ruby-dev
+Description: PAM integration with ruby
+ This extension provides PAM (Pluggable Authentication Modules) 
+ integration. The library provides a stable API for applications
+ to defer to for authentication tasks.
