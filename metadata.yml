@@ -1,0 +1,61 @@
+--- !ruby/object:Gem::Specification
+name: rpam-ruby19
+version: !ruby/object:Gem::Version
+  version: 1.2.1
+  prerelease: 
+platform: ruby
+authors:
+- Andre Osti de Moura
+- Jason Lewis
+- Fred Emmott
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2011-08-16 00:00:00.000000000Z
+dependencies: []
+description: ! "This extension provides PAM  - Pluggable Authentication\n  Modules
+  - integration"
+email: jasonlewis.x@gmail.com
+executables: []
+extensions:
+- ext/Rpam/extconf.rb
+extra_rdoc_files:
+- README.rdoc
+files:
+- ext/Rpam/rpam_ext.c
+- ext/Rpam/extconf.rb
+- rpam.gemspec
+- README.rdoc
+- LICENSE
+- lib/rpam.rb
+homepage: https://github.com/canweriotnow/rpam-ruby19
+licenses: []
+post_install_message: 
+rdoc_options:
+- --line-numbers
+- --inline-source
+- --title
+- Rpam
+- --main
+- README.rdoc
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  none: false
+  requirements:
+  - - ! '>='
+    - !ruby/object:Gem::Version
+      version: 1.9.1
+required_rubygems_version: !ruby/object:Gem::Requirement
+  none: false
+  requirements:
+  - - ! '>='
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 1.8.10
+signing_key: 
+specification_version: 3
+summary: PAM integration with ruby.
+test_files: []
